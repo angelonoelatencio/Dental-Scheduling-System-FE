@@ -32,6 +32,6 @@ const isTokenExpired = (): boolean => {
  *
  * @param token - The JWT token to be checked.
  */
-const checkTokenAndNotify = (token: string) => {};
+const checkTokenAndNotify = () => {};
 
 export { checkTokenAndNotify, isTokenExpired };

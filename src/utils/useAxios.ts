@@ -29,7 +29,7 @@ const useAxios = (): AxiosInstance => {
       const originalRequest = error.config;
       let token_ = localStorage.getItem("t");
 
-      if (isTokenExpired(token!)) {
+      if (isTokenExpired()) {
         if (
           token_ &&
           error?.response?.status === 401 &&
